@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <!-- Meta tags -->
+    <meta charset="UTF-8">
+    <!-- Stylesheets -->
+    <link rel="stylesheet" type="text/css" href="stylesheet/style.css">
+    <title>Overview</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <a href="index">Home</a> <!-- virker ikke -->
+                <a href="createWeekendEvents">Create WeekendEvent</a>
+                <a href="succes">Your Event</a>
+                <a href="overview">overview</a>
+            </ul>
+        </nav>
+    </header>
+    <hr>
+    <br>
+
+        <h1>Yea</h1>
+        <p>Your overview</p>
+
+        <div th:each="event : ${events}">
+            <p th:text="${event.getEventName()}"></p>
+            <p th:text="${event.getDate()}"></p>
+            <p th:text="${event.getFirstName()}"></p>
+            <p th:text="${event.getLastName()}"></p>
+            <p th:text="${event.getEventDescription()}"></p>
+        </div>
+
+
+    <br><br><br>
+    <hr>
+    <footer>
+        <nav>
+            <ul>
+                <a href="index">Home</a>
+                <a href="createWeekendEvents">Create WeekendEvent</a>
+                <a href="succes">Your Event</a>
+                <a href="overview">overview</a>
+            </ul>
+        </nav>
+    </footer>
+</body>
+</html>

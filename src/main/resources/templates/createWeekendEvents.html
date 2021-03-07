@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags -->
+    <meta charset="UTF-8">
+    <!-- Stylesheets -->
+    <link rel="stylesheet" type="text/css" href="stylesheet/style.css">
+    <title>Title</title>
+</head>
+<body id="Events">
+
+        <header>
+            <nav>
+                <ul>
+                    <a href="index">Home</a> <!-- virker ikke -->
+                    <a href="createWeekendEvents">Create WeekendEvent</a>
+                    <a href="succes">Your Event</a>
+                    <a href="overview">overview</a>
+                </ul>
+            </nav>
+        </header>
+        <hr>
+        <br>
+        <h2>Create WeekendEvent</h2>
+
+
+        <form action="/signUp" method="post"> <!-- The <form> tag is used to create an HTML form for user input. -->
+        <p><h3>Events</h3></p>
+            <input type="radio" id="cleanNatur" name="eventType" value="Clean natur">
+            <label for="cleanNatur">Clean Natur</label>
+            <input type="radio" id="rolePlaying" name="eventType" value="Role playing">
+            <label for="rolePlaying">Role Playing</label>
+            <input type="radio" id="gardening" name="eventType" value="gardening">
+            <label for="gardening">Volunteering gardening in Roberts allotment</label>
+
+            <br><br>
+            <!-- Datoer -->
+            <label for="date">Evant Date</label><br>
+            <input type="date" id="date" name="date"><br><br>
+
+            <!-- Tilmelding -->
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname"><br>
+            <label for="lname">Larst name</label><br>
+            <input type="text" id="lname" name="lname"><br><br>
+
+            <label>Event Description</label><br>
+            <textarea id="idDescription" name="description" cols="20" rows="20"></textarea><br>
+
+            <button type="submit">Submit</button>
+        </form>
+
+        <br><br><br>
+        <hr>
+        <footer>
+            <nav>
+                <ul>
+                    <a href="index">Home</a>
+                    <a href="createWeekendEvents">Create WeekendEvent</a>
+                    <a href="succes">Your Event</a>
+                    <a href="overview">overview</a>
+                </ul>
+            </nav>
+        </footer>
+
+</body>
+</html>
